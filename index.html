@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Politénica Metropolitana de Puebla - Control Escolar</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 40, 85, 0.85), rgba(0, 40, 85, 0.85)),
+            url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200') no-repeat center center/cover;
+            color: white;
+            padding: 120px 0;
+        }
+
+        .feature-box {
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .navbar-brand {
+            font-size: 16px;
+        }
+
+        #nosotros img {
+            max-width: 90%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-graduation-cap me-2 text-primary"></i>
+                UNIVERSIDAD POLITÉCNICA METROPOLITANA DE PUEBLA
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary btn-sm px-4 rounded-pill" href="login.php">
+                            <i class="fa-solid fa-right-to-bracket me-2"></i>
+                            Portal Escolar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado / Hero Section -->
+    <header id="inicio" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">
+                Bienvenidos a la UPMP
+            </h1>
+            <p class="lead mb-4 fs-4">
+                Formando los líderes del mañana con excelencia académica y tecnológica.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="login.php" class="btn btn-primary btn-lg px-4">
+                    Acceder al Portal Escolar
+                </a>
+                <a href="#servicios" class="btn btn-outline-light btn-lg px-4">
+                    Conocer Más
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Servicios con los 3 Accesos Diferenciados -->
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Nuestro Sistema de Gestión</h2>
+                <p class="text-muted">Una plataforma diseñada para conectar a toda nuestra comunidad universitaria.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tarjeta Estudiantes -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-box text-center border-0">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="text-primary fs-1 mb-3">
+                                    <i class="fa-solid fa-user-graduate"></i>
+                                </div>
+                                <h4 class="fw-bold">Estudiantes</h4>
+                                <p class="text-muted">
+                                    Consulta de horarios, tira de materias vigentes, historial de calificaciones y estado de cuenta.
+                                </p>
+                            </div>
+                            <div class="mt-3">
+                                <a href="login.php?rol=alumno" class="btn btn-outline-primary w-100 rounded-pill">Acceder al Portal Alumno</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Docentes -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-box text-center border-0">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="text-success fs-1 mb-3">
+                                    <i class="fa-solid fa-chalkboard-user"></i>
+                                </div>
+                                <h4 class="fw-bold">Docentes</h4>
+                                <p class="text-muted">
+                                    Gestión de clases asignadas, control de asistencias y captura de calificaciones por periodo escolar.
+                                </p>
+                            </div>
+                            <div class="mt-3">
+                                <a href="login.php?rol=docente" class="btn btn-outline-success w-100 rounded-pill">Ingreso Docente</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Administración -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm feature-box text-center border-0">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="text-warning fs-1 mb-3">
+                                    <i class="fa-solid fa-sliders"></i>
+                                </div>
+                                <h4 class="fw-bold">Administración</h4>
+                                <p class="text-muted">
+                                    Control total de inscripciones, apertura de carreras, asignación de aulas, horarios y finanzas institucionales.
+                                </p>
+                            </div>
+                            <div class="mt-3">
+                                <a href="login.php?rol=admin" class="btn btn-outline-warning w-100 rounded-pill">Panel de Control Admin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-3 text-dark">
+                        Innovación y Futuro Académico
+                    </h2>
+                    <p class="text-muted lead">
+                        Bienvenidos a la Universidad Politécnica Metropolitana de Puebla (UPMP),
+                        espacio educativo que forma profesionistas críticos de la realidad y contexto
+                        actuales; propositivos con su entorno y con ideas innovadoras para responder
+                        a las problemáticas sociales que enfrentamos a nivel local, nacional e internacional.
+
+                        Estamos convencidos de que las y los jóvenes universitarios requieren de un impulso
+                        integral por parte de su Universidad y un acompañamiento permanente en esta etapa
+                        formativa. Te invitamos a conocernos.
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNW1KllbLXpZt6UYPjFGgrYws3hAJRlKdlFbNBDF8n4Q&s=10"
+                        class="img-fluid rounded shadow"
+                        alt="UPMP">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">
+                &copy; <?php echo date('Y'); ?> Universidad - Sistema de Gestión Escolar <strong>school_manager</strong>.
+            </p>
+            <small class="text-muted">
+                Todos los derechos reservados. Desarrollado para Control Académico.
+            </small>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
